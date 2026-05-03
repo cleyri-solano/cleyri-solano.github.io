@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"/>
+  <meta name="description" content="Cleyri Solano García — Full Stack Developer Jr. especializada en Java, Spring Boot y MySQL. Disponible para nuevas oportunidades en Ciudad de México."/>
+  <title>Cleyri Solano — Full Stack Developer Jr.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ── NAV ── -->
+  <nav id="navbar">
+    <a class="nav-logo" href="#inicio">Cleyri<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#inicio"      class="nav-link active">Inicio</a></li>
+      <li><a href="#sobre-mi"   class="nav-link">Sobre mí</a></li>
+      <li><a href="#proyectos"  class="nav-link">Proyectos</a></li>
+      <li><a href="#stack"      class="nav-link">Stack</a></li>
+      <li><a href="#educacion"  class="nav-link">Educación</a></li>
+      <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+      <li><a href="#contacto"   class="nav-link nav-cta">Contacto</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="inicio">
+    <div class="hero-left">
+      <span class="hero-badge">
+        <span class="badge-dot"></span>
+        Disponible para nuevas oportunidades
+      </span>
+      <h1 class="hero-name">
+        Hola, soy<br>
+        <em>Cleyri Solano.</em>
+      </h1>
+      <p class="hero-role">Full Stack Developer Jr.</p>
+      <div class="hero-divider"></div>
+      <p class="hero-desc">
+        Desarrolladora Full Stack Jr. enfocada en backend,<br>
+        integraciones de IA y diseño de soluciones<br>
+        orientadas a negocio.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-outline" href="https://github.com/cleyri-solano" target="_blank" rel="noopener">
+          <i class="devicon-github-original"></i> GitHub
+        </a>
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/cleyri-solano/" target="_blank" rel="noopener">
+          <i class="devicon-linkedin-plain" style="color:#0A66C2"></i> LinkedIn
+        </a>
+        <a class="btn btn-primary" href="Cleyri_Solano_Garcia_CV.pdf" download>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Descargar CV
+        </a>
+      </div>
+      <div class="email-chip">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        cleyri.solano@outlook.com
+        <button class="copy-btn" onclick="copyEmail(this)" title="Copiar correo">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="9" y="9" width="13" height="13" rx="2"/>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="img/Cleyri_Solano.png" alt="Cleyri Solano García">
+    </div>
+  </section>
+
+  <!-- ── SOBRE MÍ ── -->
+  <section id="sobre-mi">
+    <div class="section-inner">
+      <h2 class="section-title fade-in">Sobre mí</h2>
+      <div class="section-line fade-in"></div>
+      <div class="about-grid fade-in">
+        <div class="about-text">
+          <p>Me interesa construir productos donde software e inteligencia artificial automaticen procesos complejos. He desarrollado proyectos full stack con foco en backend, APIs, arquitectura desacoplada e integración de modelos LLM.</p>
+          <p>Disfruto resolver problemas desde la lógica de negocio, identificar oportunidades de mejora y proponer soluciones simples, mantenibles y escalables.</p>
+          <div class="about-pills">
+            <span class="pill">Inglés B2</span>
+            <span class="pill">Ciudad de México</span>
+            <span class="pill">Disponible para reubicación</span>
+            <span class="pill">Scrum / Jira</span>
+            <span class="pill">TDD</span>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card"><div class="stat-num">4+</div><div class="stat-label">Proyectos desarrollados</div></div>
+          <div class="stat-card"><div class="stat-num">10+</div><div class="stat-label">Tecnologías dominadas</div></div>
+          <div class="stat-card"><div class="stat-num">100%</div><div class="stat-label">Compromiso con aprendizaje continuo</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROYECTOS ── -->
+  <section id="proyectos">
+    <div class="section-inner">
+      <h2 class="section-title fade-in">Proyectos</h2>
+      <div class="section-line fade-in"></div>
+      <div class="projects-grid fade-in">
+
+        <!-- 01 — Expense Classifier (destacado) -->
+        <div class="project-card project-card--featured">
+                    <div class="project-screenshot">
+            <div class="screenshot-browser">
+              <div class="browser-bar">
+                <div class="browser-dots"><span></span><span></span><span></span></div>
+              </div>
+              <div class="screenshot-content screenshot-real">
+                <img src="img/proj-expense.png" alt="Expense Classifier dashboard" class="project-img">
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-info-top">
+              <span class="project-date">2026</span>
+              <span class="project-badge project-badge--highlight">IA · AGENTE · DESTACADO</span>
+            </div>
+            <h3 class="project-name">Expense Classifier</h3>
+            <p class="project-desc">Agente de IA que clasifica gastos automáticamente usando OpenAI. Construido con React, Node.js y TypeScript — combina frontend moderno con integración de LLMs.</p>
+            <div class="project-icons">
+              <i class="devicon-react-original colored"></i>
+              <i class="devicon-nodejs-plain colored"></i>
+              <i class="devicon-typescript-plain colored"></i>
+            </div>
+            <div class="project-footer-row">
+              <a href="https://expense-classifier.vercel.app" target="_blank" rel="noopener" class="project-link project-link--demo">
+                Ver demo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="https://github.com/cleyri-solano/expense-classifier" target="_blank" rel="noopener" class="project-link">
+                Ver código <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 02 — Sales Analytics -->
+        <div class="project-card">
+                    <div class="project-screenshot">
+            <div class="screenshot-browser">
+              <div class="browser-bar">
+                <div class="browser-dots"><span></span><span></span><span></span></div>
+              </div>
+              <div class="screenshot-content screenshot-real">
+                <img src="img/proj-sales.png" alt="Sales Analytics dashboard" class="project-img">
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-info-top">
+              <span class="project-date">2026</span>
+              <span class="project-badge">DATA · ANALYTICS</span>
+            </div>
+            <h3 class="project-name">Sales Analytics</h3>
+            <p class="project-desc">Análisis end-to-end de ventas sobre la base de datos Classic Models. Consultas MySQL, procesamiento con Python (pandas, matplotlib) y visualización con Chart.js.</p>
+            <div class="project-icons">
+              <i class="devicon-mysql-plain colored"></i>
+              <i class="devicon-python-plain colored"></i>
+              <i class="devicon-javascript-plain colored"></i>
+            </div>
+            <div class="project-footer-row">
+              <a href="https://github.com/cleyri-solano/sales-analytics" target="_blank" rel="noopener" class="project-link">
+                Ver proyecto <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 03 — Luddies Holdings -->
+        <div class="project-card">
+                    <div class="project-screenshot">
+            <div class="screenshot-browser">
+              <div class="browser-bar">
+                <div class="browser-dots"><span></span><span></span><span></span></div>
+              </div>
+              <div class="screenshot-content screenshot-real">
+                <img src="img/proj-luddies.png" alt="Luddies Holdings plataforma educativa" class="project-img">
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-info-top">
+              <span class="project-date">2026</span>
+              <span class="project-badge">E-COMMERCE · EQUIPO</span>
+            </div>
+            <h3 class="project-name">Luddies Holdings</h3>
+            <p class="project-desc">E-commerce educativo desarrollado en equipo de 9 personas bajo Scrum. Catálogo de productos, carrito de compras, autenticación y arquitectura backend con Java, Spring Boot y MySQL.</p>
+            <div class="project-icons">
+              <i class="devicon-html5-plain colored"></i>
+              <i class="devicon-css3-plain colored"></i>
+              <i class="devicon-javascript-plain colored"></i>
+            </div>
+            <div class="project-footer-row">
+              <a href="https://github.com/cleyri-solano/luddiesHoldings" target="_blank" rel="noopener" class="project-link">
+                Ver proyecto <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 04 — Calle Libre Storefront -->
+        <div class="project-card">
+                    <div class="project-screenshot">
+            <div class="screenshot-browser">
+              <div class="browser-bar">
+                <div class="browser-dots"><span></span><span></span><span></span></div>
+              </div>
+              <div class="screenshot-content screenshot-real">
+                <img src="img/proj-calle.png" alt="Calle Libre Storefront e-commerce" class="project-img">
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-info-top">
+              <span class="project-date">2026</span>
+              <span class="project-badge">FRONTEND · HACKATHON</span>
+            </div>
+            <h3 class="project-name">Calle Libre Storefront</h3>
+            <p class="project-desc">Storefront para tienda de skate desarrollado en hackathon. Refactorización enfocada en código limpio, HTML semántico y diseño responsivo.</p>
+            <div class="project-icons">
+              <i class="devicon-html5-plain colored"></i>
+              <i class="devicon-css3-plain colored"></i>
+              <i class="devicon-javascript-plain colored"></i>
+            </div>
+            <div class="project-footer-row">
+              <a href="https://github.com/cleyri-solano/calle-libre-storefront" target="_blank" rel="noopener" class="project-link">
+                Ver proyecto <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── STACK ── -->
+  <section id="stack">
+    <div class="section-inner">
+      <h2 class="section-title fade-in">Stack Tecnológico</h2>
+      <div class="section-line fade-in"></div>
+      <div class="stack-categories fade-in">
+
+        <div class="stack-category">
+          <p class="stack-cat-label">Backend</p>
+          <div class="stack-row">
+            <div class="stack-item">
+              <svg class="stack-svg" viewBox="0 0 128 128"><path fill="#EA2D2E" d="M47.617 98.12s-4.767 2.774 3.397 3.71c9.892 1.13 14.947.968 25.845-1.092 0 0 2.871 1.795 6.873 3.351-24.439 10.47-55.308-.607-36.115-5.969zm-2.988-13.71s-5.348 3.959 2.823 4.805c10.567 1.091 18.91 1.18 33.354-1.6 0 0 1.993 2.025 5.132 3.131-29.542 8.64-62.446.68-41.309-6.336zM69.802 61.271c6.025 6.935-1.58 13.17-1.58 13.17s15.289-7.891 8.269-17.777c-6.559-9.215-11.587-13.792 15.635-29.58 0 .001-42.731 10.67-22.324 34.187zM76.491 1.587S89.459 14.563 64.03 34.51c-20.716 16.366-4.73 25.698-.007 36.323-12.083-10.902-20.959-20.483-15.011-29.393C58.041 28.838 81.722 22.526 76.491 1.587z"/></svg>
+              <span class="stack-name">Java</span>
+            </div>
+            <div class="stack-item"><i class="devicon-spring-original colored"></i><span class="stack-name">Spring Boot</span></div>
+            <div class="stack-item"><i class="devicon-nodejs-plain colored"></i><span class="stack-name">Node.js</span></div>
+            <div class="stack-item">
+              <svg class="stack-svg" viewBox="0 0 128 128">
+                <linearGradient id="pyA" x1="70.252" y1="1237.476" x2="170.659" y2="1151.089" gradientUnits="userSpaceOnUse" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"><stop offset="0" stop-color="#5A9FD4"/><stop offset="1" stop-color="#306998"/></linearGradient>
+                <linearGradient id="pyB" x1="209.474" y1="1098.811" x2="173.62" y2="1149.537" gradientUnits="userSpaceOnUse" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"><stop offset="0" stop-color="#FFD43B"/><stop offset="1" stop-color="#FFE873"/></linearGradient>
+                <path fill="url(#pyA)" d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.866-1.008zM50.037 9.557c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69-.001-2.604 2.073-4.721 4.633-4.721z"/>
+                <path fill="url(#pyB)" d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692 0 2.602-2.074 4.719-4.634 4.719-2.55 0-4.633-2.117-4.633-4.719 0-2.595 2.083-4.692 4.633-4.692z"/>
+              </svg>
+              <span class="stack-name">Python</span>
+            </div>
+            <div class="stack-item"><i class="devicon-mysql-plain colored"></i><span class="stack-name">MySQL</span></div>
+          </div>
+        </div>
+
+        <div class="stack-category">
+          <p class="stack-cat-label">Frontend</p>
+          <div class="stack-row">
+            <div class="stack-item"><i class="devicon-react-original colored"></i><span class="stack-name">React</span></div>
+            <div class="stack-item"><i class="devicon-javascript-plain colored"></i><span class="stack-name">JavaScript</span></div>
+            <div class="stack-item"><i class="devicon-typescript-plain colored"></i><span class="stack-name">TypeScript</span></div>
+            <div class="stack-item"><i class="devicon-html5-plain colored"></i><span class="stack-name">HTML5</span></div>
+            <div class="stack-item"><i class="devicon-css3-plain colored"></i><span class="stack-name">CSS3</span></div>
+          </div>
+        </div>
+
+        <div class="stack-category">
+          <p class="stack-cat-label">Herramientas</p>
+          <div class="stack-row">
+            <div class="stack-item"><i class="devicon-jest-plain colored"></i><span class="stack-name">Jest</span></div>
+            <div class="stack-item"><i class="devicon-git-plain colored"></i><span class="stack-name">Git</span></div>
+            <div class="stack-item"><i class="devicon-github-original"></i><span class="stack-name">GitHub</span></div>
+            <div class="stack-item"><i class="devicon-jira-plain colored"></i><span class="stack-name">Jira</span></div>
+            <div class="stack-item"><i class="devicon-bootstrap-plain colored"></i><span class="stack-name">Bootstrap</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+    <!-- ── EDUCACIÓN ── -->
+  <section id="educacion">
+    <div class="section-inner">
+      <h2 class="section-title fade-in">Educación</h2>
+      <div class="section-line fade-in"></div>
+      <div class="timeline fade-in">
+        <div class="tl-item">
+          <div class="tl-dot tl-dot--active"></div>
+          <div class="tl-date">Feb 2026 — May 2026</div>
+          <h3 class="tl-title">Bootcamp Desarrollador Java Full Stack Jr.</h3>
+          <p class="tl-sub">Generation México</p>
+          <p class="tl-desc">Formación intensiva en Java, Spring Boot, MySQL, JavaScript, TDD con Jest, metodología Scrum y trabajo en equipo con proyectos reales.</p>
+          <span class="tl-badge tl-badge--active">En curso</span>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-date">Ago 2017 — Dic 2023</div>
+          <h3 class="tl-title">Ingeniería Geológica — Titulada</h3>
+          <p class="tl-sub">Universidad Nacional Autónoma de México (UNAM)</p>
+          <p class="tl-desc">Formación científica con énfasis en análisis de datos, modelado y resolución de problemas complejos. Base analítica que potencia mi perfil como desarrolladora.</p>
+          <span class="tl-badge">Titulada</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HABILIDADES ── -->
+  <section id="habilidades">
+    <div class="section-inner">
+      <h2 class="section-title fade-in">Soft Skills</h2>
+      <div class="section-line fade-in"></div>
+      <div class="skills-grid fade-in">
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          </div>
+          <h3 class="skill-title">Resolución de problemas</h3>
+          <p class="skill-desc">Analizo situaciones con metodología y transformo retos técnicos en soluciones funcionales y claras.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="skill-title">Trabajo en equipo</h3>
+          <p class="skill-desc">He colaborado en equipos multidisciplinarios bajo Scrum, aportando activamente en cada sprint y entregable.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3 class="skill-title">Comunicación efectiva</h3>
+          <p class="skill-desc">Expreso ideas técnicas con claridad y facilito la coordinación del equipo en cada fase del proyecto.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3 class="skill-title">Proactividad</h3>
+          <p class="skill-desc">Tomo iniciativa para aprender nuevas tecnologías, proponer mejoras y asumir responsabilidades sin esperar indicaciones.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACTO ── -->
+  <section id="contacto" class="contacto-section">
+    <div class="contacto-inner">
+      <div class="contacto-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.4 2 2 0 0 1 3.62 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6 6l1.27-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+      </div>
+      <h2 class="contacto-title">¿Hablamos sobre cómo puedo<br>aportar a tu equipo?</h2>
+      <p class="contacto-sub">Aporto una visión analítica, enfoque en soluciones y bases sólidas en desarrollo full stack con orientación backend.</p>
+      <div class="contacto-actions">
+        <a href="mailto:cleyri.solano@outlook.com" class="btn-contact btn-contact--primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Contactar por correo
+        </a>
+        <a href="https://www.linkedin.com/in/cleyri-solano/" target="_blank" rel="noopener" class="btn-contact btn-contact--primary">
+          <i class="devicon-linkedin-plain" style="font-size:17px;color:#90b8d8"></i>
+          Conectar en LinkedIn
+        </a>
+      </div>
+      <p class="contacto-meta">
+        cleyri.solano@outlook.com <span>•</span> Ciudad de México <span>•</span> Disponible para reubicación
+      </p>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <span class="footer-name">Cleyri Solano García</span>
+    <span class="footer-sep">—</span>
+    <span>Full Stack Developer Jr.</span>
+    <span class="footer-sep">·</span>
+    <span>© 2026</span>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
