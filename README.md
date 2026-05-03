@@ -24,7 +24,7 @@ Este portafolio fue construido desde cero sin frameworks de UI, con foco en dise
 | Proyecto | Descripción | Tech |
 |----------|-------------|------|
 | [Expense Classifier](https://github.com/cleyri-solano/expense-classifier) | Agente de IA para clasificación automática de gastos | React · Node.js · TypeScript · OpenAI |
-| [Sales Analytics](https://github.com/cleyri-solano/sales-analytics) | Análisis end-to-end de ventas sobre Classic Models DB | MySQL · Python · Chart.js |
+| [Sales Analytics](https://cleyri-solano.github.io/sales-analytics/) | Dashboard de ventas con API REST en Node.js/Express e insights generados con OpenAI | MySQL · Node.js · Express · OpenAI |
 | [Luddies Holdings](https://github.com/cleyri-solano/luddiesHoldings) | E-commerce educativo desarrollado en equipo bajo Scrum | HTML · CSS · JS · Spring Boot |
 | [Calle Libre Storefront](https://github.com/cleyri-solano/calle-libre-storefront) | Storefront de skate shop, hackathon | HTML · CSS · JavaScript |
 
