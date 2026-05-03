@@ -264,32 +264,20 @@ section { padding: 96px 60px; border-top: 1px solid var(--border); }
 /* ════════════════════════════════════════════
    SOBRE MÍ
    ════════════════════════════════════════════ */
-.about-grid {
-  display: grid; grid-template-columns: 1.2fr .8fr;
-  gap: 72px; align-items: start;
+.about-text-container {
+  max-width: 760px; /* Mantiene las líneas de texto en un ancho cómodo para leer */
 }
-.about-text p {
-  font-size: .97rem; color: var(--text-mid);
-  line-height: 1.8; margin-bottom: 16px;
+
+.about-text-container p {
+  font-size: 1.05rem; /* Un poco más grande para darle peso de "manifiesto" */
+  color: var(--text-mid);
+  line-height: 1.85;
+  margin-bottom: 24px;
 }
-.about-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
-.pill {
-  padding: 5px 14px; border-radius: 100px;
-  background: var(--navy-light); border: 1px solid var(--navy-border);
-  font-size: .78rem; font-weight: 500; color: var(--navy);
+
+.about-text-container p:last-child {
+  margin-bottom: 0;
 }
-.about-stats { display: flex; flex-direction: column; gap: 14px; }
-.stat-card {
-  background: var(--bg); border: 1px solid var(--border);
-  border-radius: 14px; padding: 22px 26px;
-  transition: border-color .2s, box-shadow .2s;
-}
-.stat-card:hover { border-color: var(--navy-border); box-shadow: var(--sh-md); }
-.stat-num {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.4rem; font-weight: 600; color: var(--navy); line-height: 1;
-}
-.stat-label { font-size: .82rem; color: var(--text-muted); margin-top: 4px; }
 
 /* ════════════════════════════════════════════
    PROYECTOS
@@ -408,13 +396,35 @@ section { padding: 96px 60px; border-top: 1px solid var(--border); }
 .project-icons { display: flex; gap: 8px; align-items: center; margin-bottom: 16px; }
 .project-icons i { font-size: 1.55rem; }
 .icon-svg { width: 1.55rem; height: 1.55rem; vertical-align: middle; }
-.project-footer-row { border-top: 1px solid var(--border); padding-top: 14px; }
-.project-link {
-  display: inline-flex; align-items: center; gap: 6px;
-  font-size: .88rem; font-weight: 600; color: var(--text);
-  transition: color .2s, gap .2s;
+.project-footer-row { 
+  border-top: 1px solid var(--border); 
+  padding-top: 16px; 
+  display: flex;       /* Esto permite controlar el espacio entre botones */
+  gap: 12px;           /* Separación perfecta y simétrica */
+  flex-wrap: wrap; 
 }
-.project-link:hover { color: var(--navy); gap: 10px; }
+
+.project-link {
+  display: inline-flex; 
+  align-items: center; 
+  gap: 8px;
+  padding: 8px 16px;   /* Da cuerpo al botón */
+  font-size: .82rem; 
+  font-weight: 600; 
+  color: var(--text-mid);
+  background: transparent;
+  border: 1px solid var(--border-mid);
+  border-radius: 100px; /* Forma redondeada que hace juego con tu diseño */
+  transition: all .2s ease;
+}
+
+/* Estado al pasar el mouse por encima */
+.project-link:hover { 
+  color: var(--navy); 
+  border-color: var(--navy);
+  background: var(--navy-light);
+  transform: translateY(-2px); /* Efecto de elevación elegante */
+}
 
 /* ════════════════════════════════════════════
    STACK
@@ -685,7 +695,6 @@ footer {
   section { padding: 64px 20px; }
   .contacto-section { padding: 64px 20px; }
 
-  .about-grid { grid-template-columns: 1fr; gap: 40px; }
   .projects-grid { grid-template-columns: 1fr; }
   .stack-row { grid-template-columns: repeat(5, 1fr); gap: 8px; }
   .skills-grid { grid-template-columns: 1fr; }
